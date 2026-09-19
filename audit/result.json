@@ -1,0 +1,281 @@
+{
+  "scope": "target_checks_only",
+  "semantic_verdict": "not_determined",
+  "preflight": {
+    "ready_for_target_checks": true,
+    "issues": [],
+    "head": "dd4ec3dee33bec0ff191cd7d57862855a02ca1fb",
+    "git_status": "",
+    "toolchain_file": "leanprover/lean4:v4.34.0",
+    "file_sha256": {
+      "JSP897/Audit.lean": "6b21f93de03bd5901b11dce1a64a488678e1257ef077c69040b3d2496737e2b1",
+      "JSP897/Headline.lean": "b47425666077df7f735165b3ed3817b0f25541a46af4a6bece9c51d45219cc97",
+      "lake-manifest.json": "01ef8be284024ab63c1b40836b2fbba28963f4dc10bb4361113fafc2a51dd387",
+      "lakefile.lean": null,
+      "lakefile.toml": "2ca1cead1f812ea1a0e7cd8cd8b580da5e62996a4eca9ba7c512c715cc775abb",
+      "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+    },
+    "manual_preconditions": [
+      "isolation and resource limits established",
+      "clean source build and trusted cache provenance recorded",
+      "actual dependency SHAs match fixed evidence",
+      "tool binaries are trusted and match the pinned toolchain",
+      "all untracked inputs and module/source mappings reviewed"
+    ],
+    "checker_compatibility": "not_probed; inspect pinned checker separately"
+  },
+  "commands": [
+    {
+      "argv": [
+        "C:/Users/50691/.elan/bin/lake.exe",
+        "--version"
+      ],
+      "cwd": "<project>",
+      "log": "<audit-out>/version-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 0.094,
+      "log_sha256": "242bb637d740597febf655395478ffc9020e35e53e3040d8a7055bf3de6f0541"
+    },
+    {
+      "argv": [
+        "C:/Users/50691/.elan/bin/lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "<project>",
+      "log": "<audit-out>/version-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 1.906,
+      "log_sha256": "22b2a7b07d8cf2dd036853226f0f7ec55987cbd55c285e1d7282c8ba4840939b"
+    },
+    {
+      "argv": [
+        "C:/Users/50691/.elan/bin/lake.exe",
+        "build",
+        "+JSP897.Headline"
+      ],
+      "cwd": "<project>",
+      "log": "<audit-out>/0000-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 7.531,
+      "log_sha256": "0f6c9a62e7bcfe96265379be7ebda65bbd7fed5d29cf4338a93bf3a90f17ac73"
+    },
+    {
+      "argv": [
+        "C:/Users/50691/.elan/bin/lake.exe",
+        "env",
+        "lean",
+        "<project>/JSP897/Headline.lean"
+      ],
+      "cwd": "<project>",
+      "log": "<audit-out>/0000-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 22.829,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:/Users/50691/.elan/bin/lake.exe",
+        "env",
+        "lean",
+        "<audit-out>/Audit0000.lean"
+      ],
+      "cwd": "<project>",
+      "log": "<audit-out>/0000-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 22.328,
+      "log_sha256": "55e028215f2a686544a70dd4c098b5496a76ae78b13b6cfda2ab696813ce3378"
+    },
+    {
+      "argv": [
+        "C:/Users/50691/.elan/bin/lake.exe",
+        "build",
+        "+JSP897.Audit"
+      ],
+      "cwd": "<project>",
+      "log": "<audit-out>/0001-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 7.375,
+      "log_sha256": "ccc751acd4c6d4def1698046a8e0501a07cab867238b577ca30d058fcbe77843"
+    },
+    {
+      "argv": [
+        "C:/Users/50691/.elan/bin/lake.exe",
+        "env",
+        "lean",
+        "<project>/JSP897/Audit.lean"
+      ],
+      "cwd": "<project>",
+      "log": "<audit-out>/0001-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 20.781,
+      "log_sha256": "873812ab8563e085fb9ec95ddafd2f4f48fe8bf390b58448bb9349b507520d60"
+    },
+    {
+      "argv": [
+        "C:/Users/50691/.elan/bin/lake.exe",
+        "env",
+        "lean",
+        "<audit-out>/Audit0001.lean"
+      ],
+      "cwd": "<project>",
+      "log": "<audit-out>/0001-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 20.359,
+      "log_sha256": "b076341c54f800f40502ac81d7340b385e3a2134eb4f244d38ed1397e0248151"
+    }
+  ],
+  "targets": [
+    {
+      "id": "main",
+      "declaration": "JSP897.dense_neighbourhood_large_degree",
+      "audit_file": "<audit-out>/Audit0000.lean",
+      "audit_sha256": "0811620c5117d78071c74eb88788f275e9b20b3eeca6ce169e4cce016e56bfef",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "C:/Users/50691/.elan/bin/lake.exe",
+            "build",
+            "+JSP897.Headline"
+          ],
+          "cwd": "<project>",
+          "log": "<audit-out>/0000-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 7.531,
+          "log_sha256": "0f6c9a62e7bcfe96265379be7ebda65bbd7fed5d29cf4338a93bf3a90f17ac73"
+        },
+        {
+          "argv": [
+            "C:/Users/50691/.elan/bin/lake.exe",
+            "env",
+            "lean",
+            "<project>/JSP897/Headline.lean"
+          ],
+          "cwd": "<project>",
+          "log": "<audit-out>/0000-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 22.829,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "C:/Users/50691/.elan/bin/lake.exe",
+            "env",
+            "lean",
+            "<audit-out>/Audit0000.lean"
+          ],
+          "cwd": "<project>",
+          "log": "<audit-out>/0000-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 22.328,
+          "log_sha256": "55e028215f2a686544a70dd4c098b5496a76ae78b13b6cfda2ab696813ce3378"
+        }
+      ]
+    },
+    {
+      "id": "bridge",
+      "declaration": "JSP897Audit.witness",
+      "audit_file": "<audit-out>/Audit0001.lean",
+      "audit_sha256": "4bd89937d32eab8e0ef48092c7b601fdefd76da6c4362a32559f2fe0eb4edb5d",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "C:/Users/50691/.elan/bin/lake.exe",
+            "build",
+            "+JSP897.Audit"
+          ],
+          "cwd": "<project>",
+          "log": "<audit-out>/0001-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 7.375,
+          "log_sha256": "ccc751acd4c6d4def1698046a8e0501a07cab867238b577ca30d058fcbe77843"
+        },
+        {
+          "argv": [
+            "C:/Users/50691/.elan/bin/lake.exe",
+            "env",
+            "lean",
+            "<project>/JSP897/Audit.lean"
+          ],
+          "cwd": "<project>",
+          "log": "<audit-out>/0001-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 20.781,
+          "log_sha256": "873812ab8563e085fb9ec95ddafd2f4f48fe8bf390b58448bb9349b507520d60"
+        },
+        {
+          "argv": [
+            "C:/Users/50691/.elan/bin/lake.exe",
+            "env",
+            "lean",
+            "<audit-out>/Audit0001.lean"
+          ],
+          "cwd": "<project>",
+          "log": "<audit-out>/0001-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 20.359,
+          "log_sha256": "b076341c54f800f40502ac81d7340b385e3a2134eb4f244d38ed1397e0248151"
+        }
+      ]
+    }
+  ],
+  "mechanical_status": "standard_axioms_only",
+  "tool_versions": [
+    "Lake version 5.0.0-src+293d5d0 (Lean version 4.34.0)\n",
+    "Lean (version 4.34.0, x86_64-w64-windows-gnu, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)\n"
+  ],
+  "after": {
+    "ready_for_target_checks": true,
+    "issues": [],
+    "head": "dd4ec3dee33bec0ff191cd7d57862855a02ca1fb",
+    "git_status": "",
+    "toolchain_file": "leanprover/lean4:v4.34.0",
+    "file_sha256": {
+      "JSP897/Audit.lean": "6b21f93de03bd5901b11dce1a64a488678e1257ef077c69040b3d2496737e2b1",
+      "JSP897/Headline.lean": "b47425666077df7f735165b3ed3817b0f25541a46af4a6bece9c51d45219cc97",
+      "lake-manifest.json": "01ef8be284024ab63c1b40836b2fbba28963f4dc10bb4361113fafc2a51dd387",
+      "lakefile.lean": null,
+      "lakefile.toml": "2ca1cead1f812ea1a0e7cd8cd8b580da5e62996a4eca9ba7c512c715cc775abb",
+      "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+    },
+    "manual_preconditions": [
+      "isolation and resource limits established",
+      "clean source build and trusted cache provenance recorded",
+      "actual dependency SHAs match fixed evidence",
+      "tool binaries are trusted and match the pinned toolchain",
+      "all untracked inputs and module/source mappings reviewed"
+    ],
+    "checker_compatibility": "not_probed; inspect pinned checker separately"
+  },
+  "inputs_stable": true,
+  "manifest_sha256": "8ee259e5d9acf13db884ab4db871bf4f89f5ca9f8b3c9601efaa7f864f1c3a29",
+  "script_sha256": "5db45dddcb4d588bc27e7c7161fbca5cedaa3e73e1c40843d21f5a214323cd07",
+  "exit_code": 0
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "project": {
+    "root": "<absolute path to a clean checkout of this repository>",
+    "repository": "https://github.com/qkkqk1234/jsp-000897-lean",
+    "commit": "dd4ec3dee33bec0ff191cd7d57862855a02ca1fb",
+    "toolchain": "leanprover/lean4:v4.34.0"
+  },
+  "problems": [
+    {
+      "id": "erdos-1079",
+      "source": "https://www.erdosproblems.com/1079",
+      "requirements": [
+        {
+          "id": "main",
+          "description": "At the Turan edge threshold ex(n; K_r), some vertex of degree d >> n has a neighbourhood spanning at least ex(d; K_{r-1}) edges (Bollobas-Thomason 1981; maximum-degree refinement Bondy 1983).",
+          "targets": [
+            "main",
+            "bridge"
+          ],
+          "coverage": "full",
+          "evidence": "Statement correspondence and the turanNumber index dictionary argued in STATEMENT.md at the pinned commit; Bondy's refinement and the literal non-strict reading are proved as separate declarations."
+        }
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "main",
+      "problem": "erdos-1079",
+      "role": "theorem",
+      "module": "JSP897.Headline",
+      "source": "JSP897/Headline.lean",
+      "declaration": "JSP897.dense_neighbourhood_large_degree"
+    },
+    {
+      "id": "bridge",
+      "problem": "erdos-1079",
+      "role": "bridge",
+      "module": "JSP897.Audit",
+      "source": "JSP897/Audit.lean",
+      "declaration": "JSP897Audit.witness"
+    }
+  ]
+}
