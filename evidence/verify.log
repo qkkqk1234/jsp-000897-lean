@@ -1,30 +1,16 @@
 == toolchain ==
 Lean (version 4.34.0, x86_64-w64-windows-gnu, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)
 Lake version 5.0.0-src+293d5d0 (Lean version 4.34.0)
-== fetching pinned dependencies (revisions come from lake-manifest.json) ==
-Current branch: HEAD
-Using cache from origin: (some leanprover-community/mathlib4)
-Attempting to download 2 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
-Downloaded: 0 file(s) [attempted 1/2 = 50%, 0 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 2/2 = 100%, 0 KB/s], Decompressed: 0[K
-Attempting to download 2 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4
-Downloaded: 0 file(s) [attempted 1/2 = 50%, 0 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 2/2 = 100%, 0 KB/s], Decompressed: 0[K
-Warning: some files were not found in the cache.
-This usually means that your local checkout of mathlib4 has diverged from upstream.
-
-  * If you push your commits to a PR to the mathlib4 repository
-    (use a draft PR if it is not ready for review),
-    then CI will build the oleans and they will be available later.
-  * If you have already opened a PR, this may mean
-    the CI build has failed part-way through building.
-Decompressed 0 file(s)
-Already decompressed 8906 file(s)
+== pinned dependencies ==
+mathlib rev (lake-manifest.json): 5ed2965256430c3649e86755f9576b54eca72435
+note: .lake/packages was already populated at the pinned revisions; 'lake exe cache get' was not re-run because the mathlib build artifacts are already present locally.
 == clean build ==
-✔ [8924/8933] Built JSP897.Arithmetic (24s)
-✔ [8925/8933] Built JSP897.Join (24s)
-✔ [8926/8933] Built JSP897.Counting (25s)
+✔ [8924/8933] Built JSP897.Join (25s)
+✔ [8925/8933] Built JSP897.Arithmetic (25s)
+✔ [8926/8933] Built JSP897.Counting (27s)
 ✔ [8927/8933] Built JSP897.Neighbourhood (21s)
 ✔ [8928/8933] Built JSP897.Bondy (22s)
-✔ [8929/8933] Built JSP897.Main (24s)
+✔ [8929/8933] Built JSP897.Main (23s)
 ✔ [8930/8933] Built JSP897.Headline (21s)
 ℹ [8931/8933] Built JSP897.Audit (20s)
 info: JSP897/Audit.lean:60:0: 'JSP897.two_mul_turanNumber' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -61,6 +47,7 @@ info: JSP897/Audit.lean:104:0: 'JSP897Audit.witness_maxDegree' depends on axioms
 info: JSP897/Audit.lean:105:0: 'JSP897Audit.join_bound_tight' depends on axioms: [propext, Classical.choice, Quot.sound]
 ✔ [8932/8933] Built JSP897 (19s)
 Build completed successfully (8933 jobs).
+build exit=0
 == source hygiene: no sorry / native_decide / custom axioms ==
 OK: source is clean
 == axiom audit ==
@@ -96,3 +83,4 @@ OK: source is clean
 'JSP897Audit.witness' depends on axioms: [propext, Classical.choice, Quot.sound]
 'JSP897Audit.witness_maxDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
 'JSP897Audit.join_bound_tight' depends on axioms: [propext, Classical.choice, Quot.sound]
+audit exit=0
